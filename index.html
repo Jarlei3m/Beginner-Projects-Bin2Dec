@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Dec</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Convert binary to decimal</h1>
+
+        <div class="input">
+            <div class="input-block bin">
+                <label for="text">Enter the binary number<small>(up to 8)</small></label>
+                <input id="bin" type="text" name="number" maxlength="8" value="">
+                <small class="error">It´s not a binary number!</small>
+                <button>Convert
+                    <i class="material-icons">transform</i>
+                </button>
+            </div>
+            
+            <div class="input-block dec">
+                <label>Decimal</label>
+                <input id="dec" type="text" value="" readonly>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>    
+</body>
+</html>
